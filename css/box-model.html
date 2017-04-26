@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+    padding: 1em;
+    border: 1em solid yellow;
+    margin: 1em;
+    width: 25%;
+    float: left;
+    box-sizing:border-box;
+    }
+
+    .width-child {
+        width: 10em;
+
+    }
+
+    .child {
+        max-width: 15em;
+        width: 5em;
+        background-color: lightgreen;
+        overflow-x:scroll;
+        overflow-y:visible;
+        padding-top:2em;
+        padding.right:2em;
+        padding-bottom:2em;
+        padding-left:2em;
+        margin-left:2px;
+    }
+
+    .empty {
+        min-width: 2em; 
+    }
+
+    </style>
+</head>
+<body>
+    <div class="text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</div>
+
+<div class="with-child">
+    <div class="child">
+        Duis feugiat odio et lacus sodales, ac interdum ante accumsan.
+    </div>
+</div>
+
+<div class="empty">
+    blablabla
+</div>
+
+</body>
+</html>

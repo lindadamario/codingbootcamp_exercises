@@ -1,0 +1,27 @@
+#page {
+    width:1000px;
+    margin:auto;
+    background-color:goldenrod;
+    overflow:hidden;
+}
+
+#menu {
+    float:left;
+    max-width:10em;
+    margin-right:1em;
+}
+
+#main {
+    margin-left:11em;
+    margin-right:11em;
+}
+#sidebar {
+    float:right;
+    width:10em;
+    margin-bottom:20px;
+}
+
+footer {
+    clear:both;
+    margin-top:10px;
+}
