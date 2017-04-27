@@ -110,6 +110,8 @@ html {
 }
 
 .hottest img {
+    max-width:40%;
+    height:auto;
     border-radius:2%;
 }
 
