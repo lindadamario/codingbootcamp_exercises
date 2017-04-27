@@ -77,7 +77,6 @@ html {
 
 
 /* Hottest */
-
 .hottest {
     background-color:#fff;
     color:#000000;
@@ -139,7 +138,6 @@ html {
     margin:0;
 }
 
-
 .news p {
     font-size:16px;
     color:#000000;
@@ -159,5 +157,4 @@ html {
     color:#fff;
     height:70px;
     margin-top:0;
-
 }
