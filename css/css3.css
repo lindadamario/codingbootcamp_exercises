@@ -1,0 +1,11 @@
+div {
+  border: 1px solid #000000;
+  padding: 1em;
+}
+
+.inner {
+    z-index: 1;
+    position:absolute;
+    top:0;
+    right:0;
+}

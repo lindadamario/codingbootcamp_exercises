@@ -35,8 +35,105 @@ body {
 }
 
 
+@media only screen and (min-width: 421px) and (max-width: 714px) {
+
+    .nav {
+        height: 70px;
+    }
+
+    .nav .menu {
+        
+        display: block;
+        margin-top:5px;
+    }
+    .nav .menu p {
+        display:inline-block;
+        margin-right:10px;
+        font-size: 18px;
+    }
+
+    .cover .title {
+        height: 510px;
+    }
+    
+    .feature-1,
+    .feature-2,
+    .feature-3 {
+        padding:0 10px 0 10px;
+    }
+
+    
+
+    .features p {
+        visibility: hidden;
+    }
+
+    .main {
+        margin-top: 100px;
+    }
+
+    .delivery {
+        height:628px;
+    }
+    .delivery h2 {
+        
+        padding: 5px 5px 5px 10px;
+    }
+
+}
 
 
+
+@media only screen and (max-width:420px){
+
+    body {
+        margin:0 auto;
+    }
+
+    .nav {
+        height: 70px;
+    }
+
+    .nav .menu {
+        
+        display: block;
+        margin-top:5px;
+    }
+    .nav .menu p {
+        display:inline-block;
+        margin-right:10px;
+        font-size: 18px;
+    }
+
+    .cover .title {
+        height: 510px;
+    }
+    
+
+    .feature-1,
+    .feature-2,
+    .feature-3 {
+        padding:0 10px 0 10px;
+    }
+
+    .features p {
+        visibility: hidden;
+    }
+
+    .main {
+        margin-top: 100px;
+    }
+
+    .delivery-1 {
+        visibility:hidden;
+        
+    }
+    .delivery h2 {
+        text-align:center;
+        padding: 5px 5px 5px 10px;
+    }
+
+}
 
 
 /* cover */
@@ -114,6 +211,7 @@ body {
     font-family: "Alegreya Sans", sans-serif;
     font-weight:normal;
     margin:12px 0 18px 0;
+    text-transform: uppercase;
 }
 
 .features img {
@@ -135,106 +233,58 @@ body {
 }
 
 
-
-
 /* main */
 
 .main .container {
     margin: 0 auto;
-    max-width: 1142px;
+    max-width:1140px;
+    display: flex;
+    flex-wrap: wrap;
     }
 
-.main .first-row,
-.main .second-row {
-    display:inline-block;
-    text-align:left;
-    margin:4px 4px 4px 4px;
+.main .image {
+    margin: 5px;
+    position:relative;
 }
 
-.main .second-row {
-    margin-top:8px;
-}
-
-.container-first-row,
-.container-second-row {
-    width:1142px;
-}
-
-#img-1 {
-    background-image: url("file:///Users/lindadamario/codingbootcamp/exercises/Project-2/img/romance.jpg");
-    background-size: contain;
-    width:370px;
-    height:300px;
-}
-
-.main #img-2 {
-    background-image: url("file:///Users/lindadamario/codingbootcamp/exercises/Project-2/img/visitors.jpg");
-    background-size: contain;
-    width:370px;
-    height:300px;
-}
-
-.main #img-3 {
-    background-image: url("file:///Users/lindadamario/codingbootcamp/exercises/Project-2/img/picnic.jpg");
-    background-size: contain;
-    width:370px;
-    height:300px;
-}
-
-.main #img-4 {
-    background-image: url("file:///Users/lindadamario/codingbootcamp/exercises/Project-2/img/grill.jpg");
-    background-size: contain;
-    width:370px;
-    height:300px;
-}
-
-.main #img-5 {
-    background-image: url("file:///Users/lindadamario/codingbootcamp/exercises/Project-2/img/celebration.jpg");
-    background-size: contain;
-    width:370px;
-    height:300px;
-}
-
-.main #img-6 {
-    background-image: url("file:///Users/lindadamario/codingbootcamp/exercises/Project-2/img/kids.jpg");
-    background-size: contain;
-    width:370px;
-    height:300px;
-}
-
-#img-6 {
-    margin-left:8px;
-}
-
-.main h4 {
+.image h4 {
+    width:79%;
+    position:absolute;
+    padding: 19px 46px 19px 30px;
+    bottom:3px;
     background:rgba(0, 0, 0, .4);
     color:#fff;
     font-size:26px;
-    font-weight:normal;
-    margin:229px 0 0;
-    padding:20px 0 24px 30px;
+    font-weight:lighter;   
     font-family: "Open Sans", sans-serif;
     
 }
 
-/* nav query */
-/* @media only screen and (max-width: 1160px) {
+@media only screen and (max-width: 1154px) {
 
-    .main .container{
-        width:770px;
-    }
-
-    .container-first-row,
-    .container-second-row {
-        width:0;
-    }
-
-    .two-rows-1,
-    .two-rows-2,
-    .two-rows-2, {
-        display:block;
+    .main .container {
+        width:70%;
     }
 }
+
+@media only screen and (max-width: 1154px) {
+
+    .main .container {
+        width:760px;
+        margin:auto;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+
+    .main .container {
+        width:380px;
+        margin:auto;
+    }
+}
+
+
+
 
 
 /* delivery */

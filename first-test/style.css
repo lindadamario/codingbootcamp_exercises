@@ -1,0 +1,13 @@
+
+.main {
+    background-color:#ffffff;
+    height:800px;
+    position:fixed;
+    background-size: cover;
+    background-image:url("file:///Users/lindadamario/codingbootcamp/exercises/first-test/bunny.jpg")
+}
+
+.container h1, p{            
+    padding: 20px;
+    text-align: justify;    
+}
