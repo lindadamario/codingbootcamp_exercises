@@ -188,7 +188,7 @@ body {
 /* cover/title */
 .title {
     text-align:center;
-    background-image: url("file:///Users/lindadamario/codingbootcamp/exercises/Project-2/img/enchant-your-guests.jpg");
+    background-image: url("img/enchant-your-guests.jpg");
     background-size:cover;
     height: 390px; 
     color:#fff; 
