@@ -1,0 +1,19 @@
+body {
+    max-width;
+}
+
+
+section, 
+div, 
+table,
+tr,
+td {
+    border:1px solid black;
+    padding:1em;
+}
+
+.hamburger {
+    position:fixed;
+    width: 30px;
+    float:right;
+}
