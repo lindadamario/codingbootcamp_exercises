@@ -1,0 +1,421 @@
+section, 
+div {
+    border: 1px solid black;
+    padding:1em;
+}
+
+.cover {
+    background-image: url('file:///Users/lindadamario/codingbootcamp/exercises/portfolio/apple-1842297_960_720.jpg');
+    background-size: cover;
+    height:50em;
+    display:flex;
+    
+}
+
+.navbar {
+    max-width:100%;
+    display: flex;
+    
+}
+
+.navbar img {
+    float:left;
+}
+
+.navbar li {
+    display:inline-block;
+    float: right;
+    margin-right:2em;
+}
+
+.navbar, div {
+    border: 1px solid white;
+    color: #fff;
+}
+
+.social {
+    margin-right:0;
+}
+
+
+.cover {
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: row;
+    /*background-color:yellow;*/
+    padding: 0;
+}
+
+.row-1,
+.row-2 {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+/*  */
+
+.row-1-col-1 {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+} 
+
+.row-1-col-2 {
+    display: flex;
+    flex-direction: row;
+    padding:0;
+}
+
+.col-1-row-2-col-1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.col-1-row-2-col-2 {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+row-1
+row-1-col-1
+*/
+
+/*.projects {
+    background-color: rgb(0, 180, 171);
+    width:360px;
+    height:150px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px; 
+}
+
+
+
+.icon {
+    background-color:rgb(255, 216, 50);
+    width: 150px;
+    height: 150px;
+    margin-left:46px;
+    line-height: 114px;
+    text-align: center;
+    vertical-align: middle;
+}*/
+
+/*
+row-1
+row-1-col-2
+*/
+/*
+.resume {
+    background-color: rgb(254, 124, 0);
+    width:150px;
+    height:150px;
+    margin: 42px 0 30px;
+    line-height: 114px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.skills {
+    background-color: rgb(255, 94, 151);
+    width:150px;
+    height:150px;
+    line-height: 114px;
+    text-align: center;
+    vertical-align: middle;
+}   */
+
+
+/*
+col-1-row-2-col-2
+*/
+
+.linda {
+    background-color: yellow;
+    width: 364px;
+    height: 364px;
+    margin:42px;
+    background-image: url("../portfolio/linda_damario.png");
+    background-size:contain;
+}
+
+/* row-2 */
+
+.quote-1 {
+    background-color: rgb(2, 105, 164);
+    width:150px;
+    height:368px;
+    margin-bottom: 42px;
+    line-height: 326px;text-align: center;
+    vertical-align: middle;
+}
+
+/*.about-me {
+    background-color: rgb(1, 27, 86);
+    width:150px;
+    height:150px;
+    line-height: 114px;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+
+ container-2 */
+/*.container-2 {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.quote-2 {
+    background-color: lime;
+    width:150px;
+    height:150px;
+    margin: -5px 23px 0 0;
+    line-height: 114px;
+    text-align: center;
+    vertical-align: middle; 
+}*/
+/*
+.contacts {
+    background-color: rgb(241, 101, 99);
+    width:150px;
+    height:150px;
+    margin: -5px 20px 0 20px;
+    line-height: 114px;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+
+.discover-me {
+    background-color:rgb(204, 219, 56);
+    height:150px;
+    width:368px;
+    margin: -5px 0 0 26px;
+    line-height: 114px;
+    text-align: center;
+    vertical-align: middle;
+}*/
+.navbar {
+    padding:0;
+}
+
+.menu {
+    padding: 2px 0 7px 0;
+    
+}
+
+.menu li {
+    font-size:22px;
+    font-weight:normal;
+    color:#Fff;
+    border-bottom:3px solid #FFC200;
+}
+
+
+.section-about-me {
+    background-color: rgb(51, 51, 51);
+    padding-top: 5em;
+    padding-bottom: 5em;
+
+}
+
+.section-projects {
+    background-color:#FFC200;
+    color: #000000;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.project-box {
+    background-color:brown;
+    color:black;
+    margin: 10px;
+}
+
+
+
+
+.section-prog-skills {
+    background-color:rgb(51, 51, 51);;
+    padding-top: 7em;
+    padding-bottom: 7em;
+}
+
+.section-about-me {
+    background-color:#FFC200;
+}
+
+/*section-about-me*/
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    width: 17%;
+}
+
+.title h2 {
+    width:22%;
+    text-align: right;
+    border-right-color: 1px solid #FFC200;
+}
+
+.text {
+    width: 88%;;    
+}
+
+.prog-text {
+    width:31%;
+    padding: 1.5em 3em 2.5em 3em;    
+}
+
+
+
+.title-p {
+    line-height: 1.7em;
+    padding: 0 7% 0 7%;
+}
+
+
+/* project */
+
+.project-row-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.project-row-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/* section-prog-skills */
+.bar-out {
+    padding:0;
+    background-color: rgb(57, 42, 41);
+}
+
+.html-bar {
+    width:95.1%;
+    height:20px;
+    background-color: rgb(255, 194, 0);
+    padding-top:0;
+    padding-bottom: 0;
+}
+
+.css-bar {
+    width:95.1%;
+    height:20px;
+    background-color:rgb(255, 194, 0);
+    padding-top:0;
+    padding-bottom: 0;
+}
+
+.js-bar {
+    width:62%;
+    height:20px;
+    background-color: rgb(255, 194, 0);
+    padding-top:0;
+    padding-bottom: 0;
+}
+
+.php-bar {
+    width:50%;
+    height:20px;
+    background-color: rgb(255, 194, 0);
+    padding-top:0;
+    padding-bottom: 0;
+}
+
+.sql-bar {
+    width:76%;
+    height:20px;
+    background-color: rgb(255, 194, 0);
+    padding-top:0;
+    padding-bottom: 0;
+}
+
+.section-prog-skills p {
+    text-transform: uppercase;
+    font-weight:bold;
+    font-style: italic;
+}
+
+.section-contact {
+    margin:0 auto;
+    background-image: url('file:///Users/lindadamario/codingbootcamp/exercises/portfolio/background-contact.jpeg');
+    background-size:cover;
+    background-color: rgba(255, 194, 0, 0.5);   
+}
+
+
+.section-contact h1, 
+.section-contact h2,
+.section-contact form {
+    text-align: center;
+}
+
+
+.section-contact h1 {
+    font-size: 34px;
+    color:#FFC200;
+}
+
+.section-contact input {
+    height:1.8em;
+    width:18em;
+    border-radius: 5%;
+    margin: 10px;
+    border:2px solid #ffc200;
+    
+}
+
+.section-contact textarea {
+    border-radius: 5%;
+    margin:10px;
+    border:2px solid #ffc200;
+}
+
+.section-contact button {
+    background-color: #ffc200;
+
+}
+
+.form {
+    width:30%;
+    background:yellow;
+}
+
+label {
+  display: inline-block;
+  width: 140px;
+  text-align: right;
+}​
+
+
+
+.section-footer {
+    background-color: #272727;
+}
+
+
+
+
