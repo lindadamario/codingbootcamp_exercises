@@ -3,12 +3,10 @@
 $pdo = new PDO('mysql:host=localhost;dbname=actors;charset=utf8', 'root', 'rootroot');
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $stmt = $pdo->prepare('SELECT actorid, firstname FROM actors');
+    $stmt = $pdo->prepare('SELECT actorid, firstname, lastname FROM actors');
     $stmt ->execute(); // stmt = stands for statement
     $result = $stmt->fetchAll();   // use these 3 lines above to display data on the database
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,17 +25,10 @@ $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         <?php
             foreach($result as $item) 
             {
-                echo '<li>'. $item['firstname'] .'</li>';
+                echo '<li>'. $item['firstname']. ' ' .$item['lastname'] .'</li>';
             }
-
-        
-        
-        
         ?>
     </ul>
-
-    <p>
-
 
 </body>
 </html>
