@@ -1,3 +1,14 @@
+<?php
+
+    
+
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +21,10 @@
     <?php
 $pdo = new PDO('mysql:host=localhost;dbname=actors;charset=utf8', 'root', 'rootroot');
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $stmt = $pdo->prepare('SELECT actorid, firstname, lastname, gender, biography, dateofbirth FROM actors');
+    $stmt ->execute(); // stmt = stands for statement
+    $result = $stmt->fetchAll();   // use these 3 lines above to display data on the database
 
 if ($_POST) {
     $stmt = $pdo->prepare('INSERT INTO actors (firstname, lastname, gender, dateofbirth, biography) VALUES (?, ?, ?, ?, ?)');
@@ -34,12 +49,24 @@ if ($_POST) {
             <input type="radio" name="gender" value="f">F
             <br>
             <label for="dateofbirth">Date of Birth</label>
-            <input type="text" name="dateofbirth" value="dd/mm/year">
+            <input type="text" name="dateofbirth" value="year/mm/dd">
             <br>
             <textarea name="biography" id="biography" cols="30" rows="10"></textarea><br>
             <button type="submit" name="submit" value="submit">Go</button>
-
         </form>
+
+        <?php
+
+            foreach($result as $item) 
+            {
+                echo '<h2>'. $item['firstname'] .' ' . $item['lastname'].'</h2>';
+                echo '<p>'. $item['gender'].'</p>';
+                echo '<p>'.$item['biography'].'</p>';                  
+            } 
+
+        ?>
+    
+
 
 
 </body>

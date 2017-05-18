@@ -9,12 +9,12 @@
 <body>
 
     <?php
-$pdo = new PDO('mysql:host=localhost;dbname=tag;charset=utf8', 'root', 'rootroot');
+$pdo = new PDO('mysql:host=localhost;dbname=notes;charset=utf8', 'root', 'rootroot');
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 if ($_POST) {
-    $stmt = $pdo->prepare('INSERT INTO actors (tag) VALUES (?,)');
-    $stmt->execute(array($_POST['tag']));
+    $stmt = $pdo->prepare('INSERT INTO tag (tags) VALUES (?)');
+    $stmt->execute(array($_POST['tag1']));
     var_dump($_POST);
 }
 ?>
@@ -25,8 +25,9 @@ if ($_POST) {
 
     <form action="" method="POST">
     
-    <label for="tag">tag</label>
-    <input type="text" value="tag">tag
+    <label for="tag">Tag</label>
+    <input type="text" name="tag1">
+    
     <br>
     <button value="submit">Submit</button>
     
