@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!--<script>
+        // alert('HelloWorld')
+        //     console.log ('Hello Gorgeous!');
+
+        // var res =prompt('Where do you want to go?');
+
+        // res = res str.split(',');
+        // // var res = res.replace('bar', 'BootCamp');
+            
+        // console.log ('then go to ' + res);
+
+        var name = prompt('what/s your name?');
+        var user_age = prompt('How old are you?');
+        alert(processAge (name, user_name));
+
+        if(isNaN(user_age)){
+            alert('I want your age');
+        }else{
+
+            function processAge(age, user_name) {
+                if(user_age < 6) {
+                    return('Go to sleep right now, ' + name);
+                } else if( 6 < user_age < 18) {
+                    return('Go to school ' + name);
+                } else if( 18 < user_age < 60) {
+                    return('Go to work ' + name);
+                } else {
+                    return('Go to bed, old ' + name);
+                }
+            }
+        }
+
+    </script>-->
+<script src="file:///Users/lindadamario/codingbootcamp/exercises/portfolio/jquery-3.2.1.min.js">
+</script>
+
+<button>Click Me!</button>
+<div id="content">
+    <h1> header</h1>
+    <p> First Content </p>
+</div>
+
+
+<script>
+
+    var cars = ['vw', 'bmw', 'audi', 'fiat'];
+    $('#content p').remove();
+
+    for(var i = 0; i < cars.length; i++){
+        $('#content').append('<p>' + cars[i] + '</p>')
+    }
+    $('#content h1').text('cars');
+    $('#content').find('h1').text('cars');
+
+    $('content p').css('color', 'green');
+    $('content p').css('font-size', '20px');
+</script>
+
+
+
+
+<!--
+<script>
+<button>Click Me!</button>
+    <div id="content">First Content</div>
+
+
+    var button = document.getElementsByTagName('button');
+    button = button[0];
+
+    button.onclick = buttonClicked;
+    
+    function buttonClicked() {
+        alert('clicked');
+    }
+
+    var content = document.getElementById('content');
+
+    console.log(button, content);
+
+    content.innerHTML = 'Hello, world!';
+
+</script>-->
+
+
+
+<script>
+
+    var cars = ['vw', 'bmw', 'audi', 'fiat'];
+    $('#content p').remove();
+
+    for(var i = 0; i < cars.length; i++){
+        $('#content').append('<p>' + cars[i] + '</p>')
+    }
+    $('#content h1').text('cars');
+    $('#content').find('h1').text('cars');
+
+
+
+    //not good - looking for elements multiple lines
+    $('#content p').css('color', 'green');
+    $('#content p').css('font-size', '30px');
+
+
+    //efficient solution but repeating '.css'
+    var $content = $('#content p');
+    $content.css('color', 'green');
+    $content.css('font-size', '20px');
+
+    var $content= $('#conent p');
+    $content.css('color', 'green').css('font-size', '40px');
+
+    $('#content').css('color', 'green').css('font-size', '30px');
+
+
+    //complex solution, hard to rememeber sintax
+    $('#content p').css({
+        'color': 'green',
+        'font-size': '30px'
+    });
+
+
+    $('button').click(function() {
+        $('#content').html('Hello World').css('color', '#00f');
+    })
+
+    $('button').click(function() {
+        var tmpContent=$('#content').html(content);
+        content=tmpContent;
+    });
+
+
+
+
+   
+</script>
+
+</body>
+</html>
