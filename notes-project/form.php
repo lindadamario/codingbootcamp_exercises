@@ -7,7 +7,7 @@ require 'bootstrap.php';
 // end of preparation of project & environment
 // -------------------------------------------
 
-$note_categories = [ 
+$note_categories = [
     'html' => 'HTML', 
     'css' => 'CSS', 
     'javascript' => 'JavaScript', 

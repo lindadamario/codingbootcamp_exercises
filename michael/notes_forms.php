@@ -9,9 +9,18 @@
 <body>
     
 <?php
+session_start();
+if (empty($_SESSION['user'])) {
+    header('Location: login.php');
+} else {
+    echo 'Hello ' . htmlspecialchars($_SESSION['user']);
+}
 
-$pdo= new PDO('mysql:host=127.0.0.1;dbname=notes;charset=utf8', 'root', 'rootroot');
+
+$pdo = new PDO('mysql:host=127.0.0.1;dbname=notes;charset=utf8', 'root', 'rootroot');
 var_dump($pdo);
+
+
 
 
 
@@ -24,7 +33,6 @@ if($_POST)
     $stmt = $pdo->prepare('INSERT INTO notes_have_tags (id_notes, id_tags) VALUES (?, ?)');
     foreach ($_POST['tags'] as $tag) {
         $stmt->execute(array($pdo->lastInsertId(), $tag));
-    
     }
 
 
@@ -67,6 +75,22 @@ if($_POST)
 <input type="submit" value="Save"> <!--type='button' neodosiela informacie, pouzi type='submit'-->
 </form>
 
+<?php
+
+$stmt = $pdo -> prepare('SELECT n.id, n.title, n.note, t.tags FROM notes n
+    JOIN notes_have_tags nht ON n.id = nht.id_notes JOIN tag t ON t.id = nht.id_tags');
+
+$stmt->execute();
+$notes = $stmt->fetchAll();
+
+foreach ($notes as $note) {
+    echo '<p><strong><a href="update.php?id=' . $note['id'] . '">' . $note['title'] .'</strong>, tag: ' .$note['tags'].'</p>';
+}
+
+
+?>
+
+<a href="logout.php">Log Out</a>
 
 </body>
 </html>
