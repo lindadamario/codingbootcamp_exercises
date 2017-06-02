@@ -3,7 +3,20 @@
 
 <script src="../jquery-3.2.1.js"></script>
 <script>
+    $)('#hit').click(function(e){
+        e.preventDefault();
 
+        var btn = $(e.target);
+
+        $.ajax({
+            'url':
+            'method':'get'
+        })
+
+
+        alert('clicked hit');
+        
+    });
     
 
 </script>
