@@ -1,0 +1,39 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+@-ms-viewport {
+  width: device-width; }
+
+html {
+  font-size: 20px;
+  font-family: monospace;
+  background-color: skyblue; }
+
+main {
+  background-color: yellow;
+  padding: 1em; }
+
+.inside {
+  width: 50%;
+  height: 100px;
+  background-color: green;
+  float: left; }
+  .inside p {
+    background-color: blue;
+    float: left;
+    width: 50%;
+    margin: 0;
+    margin-left: 50%; }
+    .inside p.moved {
+      background-color: rgba(255, 0, 0, 0.5);
+      margin-left: -50%; }
+
+li {
+  background-color: yellow; }
+
+/*# sourceMappingURL=index.css.map */

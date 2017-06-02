@@ -4,3 +4,33 @@ html {
     font-family: monospace;
     background-color: skyblue;
 }
+
+main {
+    background-color: yellow;
+    padding:1em;
+}
+
+.inside {
+    width: 50%;
+    height: 100px;
+    background-color: green;
+    float:left;
+
+
+    p {
+        background-color: blue;
+        float: left;
+        width: 50%;
+        margin:0;
+        margin-left: 50%;
+
+
+        &.moved {
+            background-color: rgba(255, 0, 0, 0.5);
+            margin-left: -50%;
+        }
+    }
+}
+
+
+
