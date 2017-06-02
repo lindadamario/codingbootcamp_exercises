@@ -82,6 +82,22 @@
 
         })
 
+        
+        
+        $('#stand').click(function(e){
+            e.preventDefault();
+
+            var btn = $(e.target);
+
+            $.ajax({
+                'url': btn.attr('href'),
+                'method': 'get'
+            }).done(function(){
+                console.log(data);
+            }).fail(function(){
+                alert('something went wrong, come back soon...');
+            });
+        });
 
     });
 

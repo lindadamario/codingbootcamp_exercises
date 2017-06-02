@@ -4,6 +4,6 @@ $config = [
     'host' => '127.0.0.1',
     'database' => 'blackjack',
     'username' => 'root',
-    'password' => '',
+    'password' => 'rootroot',
     'charset' => 'utf8'
 ];
