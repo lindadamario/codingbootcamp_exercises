@@ -26,6 +26,8 @@
                 return;
             }
 
+            data = JSON.parse(data);
+
             $('#cards').empty();
             for(var i = 0; i < data.player_cards.length; i++){
                 var card = data.player_cards[i];

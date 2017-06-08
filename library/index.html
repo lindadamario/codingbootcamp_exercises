@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        #countdown {
+            width: 200px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 5%;
+        }
+
+    </style>
+</head>
+<body>
+    
+
+
+    <div id="countdown"></div>
+
+    <button id="start" onclick="date_now">start</button>
+
+
+
+    <script src="../library/jquery-3.2.1.js"></script>
+    <script>
+
+        
+        var date_countdown = new Date(2017,5,3);
+        var countdown = $('#countdown');
+        
+        var setting = {
+            'secs': true,
+            'mins': true,
+            'hrs': true,
+            'days': '2017, 5, 3',
+        };
+
+        function showTime(){
+            var date_now = new Date();
+            var diff = date_countdown.getTime() - date_now.getTime();
+            
+            // var secs = diff / 1000;
+            // var mins = secs / 60;
+            // var hrs = mins / 60;
+            // var days = hrs / 24;
+
+            days = Math.floor(days);
+            hrs =  Math.floor(hrs - (days * 24));
+            mins = Math.floor(mins - ((days * 24) + hrs * 60));
+            secs = Math.floor(secs - (((days * 24)+ hrs * 60) + mins) * 60);
+
+
+            console.log(date_now);
+            console.log(date_countdown);
+
+            console.log(days, hrs, mins, secs);
+
+            countdown.empty();        
+
+            if(setting.days) countdown.append('<h1>'+ days +'</h1>');
+            if(setting.hrs) countdown.append('<h1>'+ hrs +'</h1>');
+            if(setting.mins) countdown.append('<h1>'+ mins +'</h1>');
+            if(setting.secs) countdown.append('<h1>'+ secs +'</h1>');
+        }
+
+    showTime();
+    setInterval(function(){
+        showTime();
+    }, 1000);
+
+    $.fn.dropdown = function(){ // fn is used when you want to call a function already existing in the jquery library
+        alert('hey i am a dropdown');
+        
+        this.remove;
+    };
+
+    $('body').dropdown();
+
+    </script>
+</body>
+</html>
